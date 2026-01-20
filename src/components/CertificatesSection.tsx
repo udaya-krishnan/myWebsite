@@ -4,42 +4,13 @@ import { Button } from "./ui/button";
 
 const certificates = [
   {
-    title: "Meta Frontend Developer",
+    title: "Meta Python Programming",
     platform: "Meta / Coursera",
-    date: "2024",
-    credentialUrl: "#",
-  },
-  {
-    title: "React - The Complete Guide",
-    platform: "Udemy",
-    date: "2024",
-    credentialUrl: "#",
-  },
-  {
-    title: "JavaScript Algorithms",
-    platform: "freeCodeCamp",
-    date: "2023",
-    credentialUrl: "#",
-  },
-  {
-    title: "Responsive Web Design",
-    platform: "freeCodeCamp",
-    date: "2023",
-    credentialUrl: "#",
-  },
-  {
-    title: "CSS Advanced Techniques",
-    platform: "LinkedIn Learning",
-    date: "2024",
-    credentialUrl: "#",
-  },
-  {
-    title: "Git & GitHub Mastery",
-    platform: "Coursera",
-    date: "2023",
-    credentialUrl: "#",
+    date: "2026",
+    credentialUrl: "https://coursera.org/share/438f5b08579fb275bdbdc24dea400329",
   },
 ];
+
 
 const CertificatesSection = () => {
   return (

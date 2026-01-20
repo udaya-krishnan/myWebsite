@@ -3,10 +3,10 @@ import { Mail, Github, Linkedin, Twitter, Send, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, url: "https://github.com", color: "hover:text-foreground" },
-  { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com", color: "hover:text-blue-400" },
-  { name: "Twitter", icon: Twitter, url: "https://twitter.com", color: "hover:text-sky-400" },
-  { name: "Email", icon: Mail, url: "mailto:hello@example.com", color: "hover:text-accent" },
+  { name: "GitHub", icon: Github, url: "https://github.com/udaya-krishnan", color: "hover:text-foreground" },
+  { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/udayakrishnan-k/", color: "hover:text-blue-400" },
+  { name: "Twitter", icon: Twitter, url: "https://x.com/Udayakrishnan_Kttps://twitter.com", color: "hover:text-sky-400" },
+  { name: "Email", icon: Mail, url: "udayankrishnan36@gmail.com", color: "hover:text-accent" },
 ];
 
 const ContactSection = () => {
@@ -47,13 +47,13 @@ const ContactSection = () => {
 
               <div className="flex items-center gap-3 text-muted-foreground mb-4">
                 <MapPin size={18} className="text-primary" />
-                <span>Available for remote work worldwide</span>
+                <span>Available for remote, hybrid, or onsite work</span>
               </div>
 
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={18} className="text-primary" />
-                <a href="mailto:hello@example.com" className="hover:text-foreground transition-colors">
-                  hello@example.com
+                <a href="udayankrishnan36@gmail.com" className="hover:text-foreground transition-colors">
+                  udayankrishnan36@gmail.com
                 </a>
               </div>
             </div>
@@ -61,7 +61,7 @@ const ContactSection = () => {
             {/* Right side - Actions */}
             <div className="flex flex-col justify-center">
               <Button variant="hero" size="xl" className="w-full mb-6" asChild>
-                <a href="mailto:hello@example.com">
+                <a href="udayankrishnan36@gmail.com">
                   <Send className="mr-2" size={20} />
                   Send me an Email
                 </a>
@@ -102,7 +102,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center text-muted-foreground mt-12"
         >
-          Designed & Built with ❤️ using React & Tailwind CSS
+          Built with passion and code ❤️ by Udayakrishnan K
         </motion.p>
       </div>
     </section>

@@ -74,28 +74,29 @@ const HeroSection = () => {
             </motion.div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 text-balance">
-              Frontend Developer crafting{" "}
-              <span className="gradient-text">clean, modern</span>{" "}
-              web experiences.
-            </h1>
+  Full-Stack Developer crafting{" "}
+  <span className="gradient-text">end-to-end</span>{" "}
+  web solutions.
+</h1>
 
             <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-lg text-muted-foreground mb-4"
-            >
-              React • Tailwind CSS • Modern UI • Performance-focused
-            </motion.p>
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.4, duration: 0.6 }}
+  className="text-lg text-muted-foreground mb-4"
+>
+  Frontend • Backend • Database • Modern Web
+</motion.p>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0"
-            >
-              Transforming ideas into beautiful, responsive, and user-friendly digital experiences.
-            </motion.p>
+<motion.p
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.5, duration: 0.6 }}
+  className="text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0"
+>
+  I build scalable, responsive, and user-friendly web applications from concept to deployment.
+</motion.p>
+
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -124,7 +125,7 @@ const HeroSection = () => {
               className="flex gap-4 mt-8 justify-center lg:justify-start"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/udaya-krishnan/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-muted/30 border border-border/50 text-muted-foreground hover:text-foreground hover:bg-muted/50 hover:border-primary/30 transition-all duration-300"
@@ -132,7 +133,7 @@ const HeroSection = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/udayakrishnan-k/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-muted/30 border border-border/50 text-muted-foreground hover:text-foreground hover:bg-muted/50 hover:border-primary/30 transition-all duration-300"
@@ -157,9 +158,9 @@ const HeroSection = () => {
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden border-2 border-border/50 shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-10" />
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  src="/me.jpeg"
                   alt="Developer portrait"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
 
@@ -177,7 +178,7 @@ const HeroSection = () => {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
-                🎨 Tailwind CSS
+               🧠 Backend Logic
               </motion.div>
             </div>
           </motion.div>

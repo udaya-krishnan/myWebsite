@@ -4,37 +4,68 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Dashboard",
-    description: "A modern admin dashboard for managing online stores with real-time analytics, inventory tracking, and order management.",
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true,
-  },
+  title: "E-Commerce Platform",
+  description:
+    "A full-stack e-commerce application with an admin dashboard, real-time sales insights, inventory management, order processing, and user authentication.",
+  techStack: [
+    "Node.js",
+    "Express.js",
+    "EJS",
+    "Bootstrap",
+    "MongoDB",
+    "Chart.js"
+  ],
+  liveUrl: "#",
+  githubUrl: "https://github.com/udaya-krishnan/Echo-Elite.git",
+  featured: true,
+}
+,
+ {
+  title: "Service Website",
+  description:
+    "A modern, responsive service website built with React and TypeScript, featuring smooth animations, clean UI, and an optimized user experience.",
+  techStack: [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion"
+  ],
+  liveUrl: "https://solvxai.vercel.app/",
+  githubUrl: "https://github.com/solvxaisolutions/team_solvxai.git",
+  featured: true,
+}
+,
   {
-    title: "Task Management App",
-    description: "A collaborative task management application with drag-and-drop functionality, team workspaces, and progress tracking.",
-    techStack: ["React", "Redux", "Framer Motion", "Firebase"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true,
-  },
+  title: "Hostel Booking Platform",
+  description:
+    "A full-stack hostel booking website that allows users to browse hostels, view availability, and manage bookings, built with a clean architecture approach.",
+  techStack: [
+    "React",
+    "Tailwind CSS",
+    "Redux",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Clean Architecture"
+  ],
+  liveUrl: "https://hostel-haven.vercel.app/",
+  githubUrl: "https://github.com/udaya-krishnan/Hostel_Haven.git",
+  featured: false,
+},
   {
-    title: "Weather Application",
-    description: "Beautiful weather app with location-based forecasts, interactive maps, and severe weather alerts.",
-    techStack: ["React", "OpenWeather API", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
-  {
-    title: "Portfolio Website",
-    description: "A creative portfolio showcasing projects and skills with smooth animations and modern design patterns.",
-    techStack: ["React", "Framer Motion", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
+  title: "Tuition Class Website",
+  description:
+    "A responsive tuition class website built with React and Tailwind CSS, featuring course details, contact sections, and Google Maps integration for easy location access.",
+  techStack: [
+    "React",
+    "Tailwind CSS",
+    "Google Maps API"
+  ],
+  liveUrl: "https://luminous-academy-website.vercel.app/",
+  githubUrl: "https://github.com/udaya-krishnan/luminous-academy-website.git",
+  featured: false,
+}
+,
 ];
 
 const ProjectsSection = () => {
@@ -81,14 +112,17 @@ const ProjectsSection = () => {
                     >
                       <Github size={20} />
                     </a>
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                   {project.liveUrl && project.liveUrl !== "#" && (
+  <a
+    href={project.liveUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-muted-foreground hover:text-foreground transition-colors"
+  >
+    <ExternalLink size={20} />
+  </a>
+)}
+
                   </div>
                 </div>
 
@@ -114,12 +148,15 @@ const ProjectsSection = () => {
 
                 {/* Actions */}
                 <div className="flex gap-3 pt-2">
-                  <Button variant="glass" size="sm" asChild className="flex-1">
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} className="mr-1" />
-                      Live Demo
-                    </a>
-                  </Button>
+                  {project.liveUrl && project.liveUrl !== "#" && (
+  <Button variant="glass" size="sm" asChild className="flex-1">
+    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+      <ExternalLink size={16} className="mr-1" />
+      Live Demo
+    </a>
+  </Button>
+)}
+
                   <Button variant="outline" size="sm" asChild className="flex-1">
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github size={16} className="mr-1" />

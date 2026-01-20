@@ -52,15 +52,16 @@ const AboutSection = () => {
           >
             <div className="glass-card p-8">
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-                I'm a passionate frontend developer focused on building fast, responsive, 
-                and visually appealing web applications. I enjoy turning ideas into 
-                real-world products using modern web technologies.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                With a keen eye for design and a commitment to clean code, I strive to 
-                create seamless user experiences that not only look great but also 
-                perform exceptionally well across all devices.
-              </p>
+  I’m a passionate full-stack developer who enjoys building fast, responsive, and 
+  scalable web applications. I work across frontend, backend, and databases to turn 
+  ideas into real-world, production-ready solutions.
+</p>
+<p className="text-muted-foreground leading-relaxed">
+  With a strong focus on clean code, performance, and thoughtful design, I create 
+  seamless digital experiences that are reliable, maintainable, and work flawlessly 
+  across all devices.
+</p>
+
             </div>
           </motion.div>
 

@@ -1,19 +1,34 @@
 import { motion } from "framer-motion";
 
 const skills = [
+  // Frontend
   { name: "React.js", category: "framework" },
   { name: "Tailwind CSS", category: "styling" },
   { name: "JavaScript (ES6+)", category: "language" },
   { name: "TypeScript", category: "language" },
   { name: "HTML5 & CSS3", category: "core" },
-  { name: "Git & GitHub", category: "tools" },
   { name: "Responsive Design", category: "design" },
-  { name: "UI/UX Basics", category: "design" },
-  { name: "REST APIs", category: "backend" },
-  { name: "Vite", category: "tools" },
   { name: "Framer Motion", category: "animation" },
+
+  // Backend
+  { name: "Node.js", category: "backend" },
+  { name: "REST APIs", category: "backend" },
+
+  // Database
+  { name: "MongoDB", category: "database" },
+
+  // Programming Languages
+  { name: "Python", category: "language" },
+
+  // Tools
+  { name: "Git & GitHub", category: "tools" },
+  { name: "Vite", category: "tools" },
+
+  // Design
+  { name: "UI/UX Basics", category: "design" },
   { name: "Figma", category: "design" },
 ];
+
 
 const categoryColors: Record<string, string> = {
   framework: "from-primary/20 to-primary/5 border-primary/30 hover:border-primary/60",
